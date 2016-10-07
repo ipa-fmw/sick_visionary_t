@@ -104,7 +104,7 @@ public:
 	
     /* establish the control channel to the device */
     bool open() {
-        ROS_DEBUG("Connecting to device...");
+        ROS_INFO("Connecting to device...");
         
         if(!connect(remote_device_ip_, "2112")) {
             ROS_ERROR("Error on connecting to %s", remote_device_ip_.c_str());
